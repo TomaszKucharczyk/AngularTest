@@ -1,5 +1,8 @@
+<div>
 <p>This is the partial for view 1.</p>
 <p>HEHEHEHHE</p>
 
-<input ng-model="$ctrl.text"/>
-<p>{{$ctrl.change($text)}}</p>
+<input ng-model="text"/>
+<p ng-bind="$ctrl.change2(text)"></p>
+<input type="button" ng-click="$ctrl.change(text)" />
+</div>
